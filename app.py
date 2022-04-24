@@ -1,9 +1,7 @@
 from flask import Flask
-app = flask(__name__)
-
-@app.route('/')
-def hello():
-    return 'Hello World'
-
-if __name__ = '__main__':
-app.run()
+app = Flask(__name__)
+@app.route('/hello')
+def helloIndex():
+    return 'Hello World from Python Flask!'
+if __name__ == '__main__':
+    app.run()
